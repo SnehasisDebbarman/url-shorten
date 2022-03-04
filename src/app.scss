@@ -1,0 +1,503 @@
+@import 'media-queries.scss';
+
+$cyanP: hsl(180, 66%, 49%);
+$violetP:hsl(257, 27%, 26%);
+$whiteP: #ffffff;
+$redS: hsl(0, 87%, 67%);
+$greyN:hsl(0, 0%, 75%);
+$violetN:hsl(257, 7%, 63%);
+$blueN:hsl(255, 11%, 22%);
+$darkVioletN:hsl(260, 8%, 14%);
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    font-size: 14px;
+    @include lt-sm {
+        font-size: 12px;
+       }
+  }
+  .popupNav{
+    position: absolute;
+    display: none;
+    font-size: 1.3rem;
+    @include lt-sm {
+        display: flex;
+        flex-direction: column;
+        background-color: $violetP;
+        width: 90vw;
+        margin: 5vw;
+        padding: 5vw;
+        gap:1.2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-weight: 700;
+       }
+       hr{
+           color: $violetN;
+       }
+       .subHeading{
+        color: $whiteP;
+        }   
+        .loginBtn{
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background: none;
+            padding: 1rem;
+            color: $whiteP;
+        }
+        .signupBtn{
+            font-size: 1.3rem;
+            color: $whiteP;
+            padding: 0.5rem 1rem;
+            border-radius: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background: $cyanP;
+        }
+    }
+  nav{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 5rem;
+      @include lt-sm {
+        padding: 1rem 1rem;
+       }
+    .leftNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        @include lt-sm {
+            gap:1rem;
+           }
+           h1{
+            font-size: 2.3rem;
+           }
+        .subHeading{
+            color: $violetN;
+            @include lt-sm {
+                display: none;
+               }
+        }
+        
+    }
+    .rightNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        @include lt-sm {
+           display: none;
+          }
+        .loginBtn{
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background: none;
+            padding: 1rem;
+        }
+        .signupBtn{
+            font-size: 1rem;
+            color: $whiteP;
+            padding: 0.5rem 1rem;
+            border-radius: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            background: $cyanP;
+        }
+    }
+    
+    .rightNavMobile{
+        display: none;
+        @include lt-sm {
+            display: block;
+          }
+         
+    }
+  }
+main{
+    overflow: hidden;
+    .section1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        @include lt-sm {
+            display: flex;
+           flex-direction: column-reverse;
+          }
+        .bigText{
+            padding: 1rem 5rem;
+            @include lt-sm {
+                padding: 1rem 1rem;
+              }
+            .bigTextHeading{
+                margin-top: 9rem;
+                font-size: 3.5rem;
+                font-weight: 700;
+                line-height: 4rem;
+                color: $darkVioletN;
+                @include lt-sm {
+                  font-size: 2.5rem;
+                }
+            }
+            .bigTextDescrption{
+                font-size: 1.2rem;
+                color: $violetN;
+
+            }
+            .getStartedBtn{
+                color: $whiteP;
+                background-color: $cyanP;
+                width: fit-content;
+                margin-top: 1rem;
+                padding: 0.5rem 2rem;
+                border-radius: 1.3rem;
+                font-weight: 700;
+
+            }
+        }
+        .personWithDesk{
+            img{
+                overflow: hidden;
+                width: 60vw;
+                @include lt-sm {
+                    width: 140vw;
+                  }
+            }
+           
+            // background: url();
+        }
+
+    }
+}
+.section2{
+    margin-top: 10rem;
+    padding: 5rem 5rem;
+    background: $greyN;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include lt-sm {
+        padding: 1rem 1rem;
+      }
+    .IOContainer{
+        top: -3.5rem;
+        position: absolute;
+        width: 90vw;  
+        border-radius: 10px;
+        background:$violetP url(./url-shortening-api-master/images/bg-shorten-desktop.svg);
+        padding: 3rem;
+       
+        .inputContainer{
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            @include lt-sm {
+                display: flex;
+                flex-direction: column;
+              }
+            .urlInput{
+                width: 80%;
+                height: 3rem;
+                padding: 1rem;
+               
+                @include lt-sm {
+                    width: 100%;
+                   }
+            }
+            .urlInputErr{
+                width: 80%;
+                height: 3rem;
+                padding: 1rem;
+                border: 2px solid red;
+                border-radius: 4px;
+                @include lt-sm {
+                    width: 100%;
+                   }
+
+            }
+            .submitLink{
+                background-color: $cyanP;
+                border: none;
+                color: $whiteP;
+                font-weight: 700;
+                font-size: 1.2rem;
+                border-radius: 5px;
+                width: 20%;
+                @include lt-sm {
+                   width: 100%;
+                   height: 3rem;
+                  }
+
+            }
+        }
+       
+    }
+    .outputContainer{
+        width: 90vw; 
+       
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @include lt-sm {
+            padding-top: 12rem;
+          }
+          .itemContainer{
+            display: flex;
+            justify-content: space-between;
+           
+            border-radius: 3px;
+            font-size: 1rem;
+            background-color: $whiteP;
+            @include gt-sm{
+                align-items: center;
+            }
+            @include lt-sm {
+                display: flex;
+                flex-direction: column;
+                .itemHeader{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                   font-size: 0.8rem;
+                }
+               
+              }
+              .hr{
+                  display: none;
+
+                @include lt-sm {
+                    display: block;
+                    border-top: 1px solid $greyN;
+                }
+
+              }
+              .itemHeader{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 0.8rem;
+                padding: 1rem;
+            }
+              .linkContainer{
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                font-size: 0.8rem;
+                @include gt-sm{
+                    align-items: center;
+                }
+                @include lt-sm {
+                    display: flex;
+                    flex-direction: column;
+                  }
+                a{
+                    text-decoration: none;
+                    color: $cyanP;
+                }
+                button{
+                    padding: 0.5rem;
+                    width: 5rem;
+                    border-radius: 5px;
+                    color: #ffffff;
+                    border: none;
+                    background: $cyanP;
+                    @include lt-sm {
+                        width: 100%;
+                    }
+                }
+                .copied{
+                    background: $violetP;
+                }
+               
+
+              }
+          }
+        
+    }
+    .advContainer{
+        width: 40vw;
+        padding-top: 3rem;
+        text-align: center;
+        @include lt-sm {
+            width: 80vw;
+          }
+
+        .advText{   
+            color: $darkVioletN;
+            font-size: 2.2rem;
+            font-weight: 700;
+            
+        }
+        .advDescription{
+            color: $violetN;
+
+        }
+    }
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 6.5%;
+        @include lt-sm {
+            grid-template-columns: 100%;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10rem;
+          }
+        
+       
+        .card{
+            height: fit-content;
+            border-radius: 10px;
+            background-color: $whiteP;
+            padding: 2rem;
+            position: relative;
+           
+            .imgContainer{
+                background-color: $violetP;
+                padding: 1rem;
+                top:-2rem;
+                border-radius: 70%;
+                position: absolute;
+                height: 4rem;
+                width: 4rem;
+                img{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+            
+            .cardHeading{
+                font-size: 1.4rem;
+                font-weight: 700;
+                padding-top: 3rem;
+                padding-bottom: 1rem;
+            }
+           
+            .cardBody{
+
+            }
+        }
+        .card:nth-child(1){
+            margin-top: 5rem;
+            @include lt-sm {
+                margin-top: 3rem;
+                .imgContainer{
+                    background-color: $violetP;
+                    padding: 1rem;
+                    left:calc(50% - 2rem);
+                    border-radius: 70%;
+                    position: absolute;
+                    height: 4rem;
+                    width: 4rem;
+                    img{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+              }
+        }
+        .card:nth-child(2){
+            margin-top: 10rem;
+            @include lt-sm {
+                margin-top: 3rem;
+                .imgContainer{
+                    background-color: $violetP;
+                    padding: 1rem;
+                    left:calc(50% - 2rem);
+                    border-radius: 70%;
+                    position: absolute;
+                    height: 4rem;
+                    width: 4rem;
+                    img{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+              }
+        }
+        .card:nth-child(3){
+            margin-top: 15rem;
+            @include lt-sm {
+                margin-top: 3rem;
+                .imgContainer{
+                    background-color: $violetP;
+                    padding: 1rem;
+                    left:calc(50% - 2rem);
+                    border-radius: 70%;
+                    position: absolute;
+                    height: 4rem;
+                    width: 4rem;
+                    img{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+              }
+        }
+    }
+    
+}
+.section3{
+    background: $violetP url(./url-shortening-api-master//images/bg-shorten-desktop.svg);
+    color: $whiteP;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .boostLink{
+        font-size: 1.5rem;
+    }
+    .boostGetStarted{
+        padding: 0.5rem 1rem;
+        background-color: $cyanP;
+        width: fit-content;
+        border-radius: 1.3rem;
+
+    }
+}
+footer{
+    color: $whiteP;
+    background: $darkVioletN;
+    padding: 1rem 5rem;
+    display: grid;
+    grid-template-columns: 25% 16% 16% 16% 25%;
+    @include lt-sm {
+        text-align: center;
+        grid-template-columns: 100%;
+    }
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        h3,h2{
+            padding: 1rem 0;
+        }
+        div{
+            color: $violetN;
+        }
+    }
+    
+
+}
+  
