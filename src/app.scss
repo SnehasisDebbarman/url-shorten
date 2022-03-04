@@ -351,13 +351,29 @@ main{
         display: grid;
         grid-template-columns: 30% 30% 30%;
         gap: 6.5%;
+       
+
         @include lt-sm {
             grid-template-columns: 100%;
             align-items: center;
             justify-content: center;
             padding-bottom: 10rem;
           }
-        
+        .line{
+            position: absolute;
+            top: 75%;
+            height: 1rem;
+            width: 80vw;
+            background-color: $cyanP;
+            z-index: 0;
+            @include lt-sm {
+                top: 60%;
+                height: 90vh;
+                left: calc(50% - 0.5rem);
+                width: 1rem;
+               
+              }
+        }
        
         .card{
             height: fit-content;
@@ -365,6 +381,7 @@ main{
             background-color: $whiteP;
             padding: 2rem;
             position: relative;
+            z-index: 1;
            
             .imgContainer{
                 background-color: $violetP;
@@ -489,6 +506,9 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
+        :hover{
+            color: $cyanP;
+        }
 
         h3,h2{
             padding: 1rem 0;
@@ -496,8 +516,22 @@ footer{
         div{
             color: $violetN;
         }
+        
     }
+
     
 
 }
+.socialHolder{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+svg:hover {
+    path{
+        fill: $cyanP;
+    }
+   
+  }
   
