@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/url-shorten/static/css/main.1ce1cd00.css",
+    "main.css": "/url-shorten/static/css/main.ae216504.css",
     "main.js": "/url-shorten/static/js/main.a291e93e.js",
     "static/js/787.d8d6377c.chunk.js": "/url-shorten/static/js/787.d8d6377c.chunk.js",
     "static/media/illustration-working.svg": "/url-shorten/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
@@ -14,13 +14,13 @@
     "static/media/bg-shorten-desktop.svg": "/url-shorten/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
     "static/media/icon-twitter.svg": "/url-shorten/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
     "static/media/icon-facebook.svg": "/url-shorten/static/media/icon-facebook.2075be3b67c18bc7d5bd46b36019ef9a.svg",
-    "static/media/line.svg": "/url-shorten/static/media/line.ba1f77be4da207267484.svg",
-    "main.1ce1cd00.css.map": "/url-shorten/static/css/main.1ce1cd00.css.map",
+    "static/media/line.svg": "/url-shorten/static/media/line.d54d4781ffa206a6be5d.svg",
+    "main.ae216504.css.map": "/url-shorten/static/css/main.ae216504.css.map",
     "main.a291e93e.js.map": "/url-shorten/static/js/main.a291e93e.js.map",
     "787.d8d6377c.chunk.js.map": "/url-shorten/static/js/787.d8d6377c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ce1cd00.css",
+    "static/css/main.ae216504.css",
     "static/js/main.a291e93e.js"
   ]
 }
