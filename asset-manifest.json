@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5454edb4.css",
-    "main.js": "/static/js/main.52b5c437.js",
-    "static/js/787.d8d6377c.chunk.js": "/static/js/787.d8d6377c.chunk.js",
-    "static/media/illustration-working.svg": "/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/icon-fully-customizable.svg": "/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
-    "static/media/icon-brand-recognition.svg": "/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
-    "static/media/icon-detailed-records.svg": "/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
-    "static/media/bg-shorten-desktop.svg": "/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
-    "index.html": "/index.html",
-    "main.5454edb4.css.map": "/static/css/main.5454edb4.css.map",
-    "main.52b5c437.js.map": "/static/js/main.52b5c437.js.map",
-    "787.d8d6377c.chunk.js.map": "/static/js/787.d8d6377c.chunk.js.map"
+    "main.css": "/url-shorten/static/css/main.d5b780a0.css",
+    "main.js": "/url-shorten/static/js/main.57d9617f.js",
+    "static/js/787.d8d6377c.chunk.js": "/url-shorten/static/js/787.d8d6377c.chunk.js",
+    "static/media/illustration-working.svg": "/url-shorten/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/logo.svg": "/url-shorten/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/icon-fully-customizable.svg": "/url-shorten/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
+    "static/media/icon-brand-recognition.svg": "/url-shorten/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
+    "static/media/icon-detailed-records.svg": "/url-shorten/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
+    "index.html": "/url-shorten/index.html",
+    "static/media/bg-shorten-desktop.svg": "/url-shorten/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
+    "main.d5b780a0.css.map": "/url-shorten/static/css/main.d5b780a0.css.map",
+    "main.57d9617f.js.map": "/url-shorten/static/js/main.57d9617f.js.map",
+    "787.d8d6377c.chunk.js.map": "/url-shorten/static/js/787.d8d6377c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5454edb4.css",
-    "static/js/main.52b5c437.js"
+    "static/css/main.d5b780a0.css",
+    "static/js/main.57d9617f.js"
   ]
 }
