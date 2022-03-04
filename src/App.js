@@ -107,7 +107,7 @@ function App() {
             <div className="getStartedBtn">Get Started</div>
           </div>
           <div className="personWithDesk">
-            <img src={personWithDeskImage} alt="" />
+            <img src={personWithDeskImage} alt="some images" />
           </div>
         </section>
         <section className="section2">
@@ -173,7 +173,7 @@ function App() {
           <div className="cardContainer">
             <div className="card">
               <div className="imgContainer">
-                <img src={brandRecon} alt="" />
+                <img src={brandRecon} alt="some images" />
               </div>
 
               <div className="cardHeading">Brand Recognition</div>
@@ -185,7 +185,7 @@ function App() {
             </div>
             <div className="card">
               <div className="imgContainer">
-                <img src={detailRecord} alt="" />
+                <img src={detailRecord} alt="some images" />
               </div>
               <div className="cardHeading">Detailed Records</div>
               <div className="cardBody">
@@ -196,7 +196,7 @@ function App() {
             </div>
             <div className="card">
               <div className="imgContainer">
-                <img src={fullCus} alt="" />
+                <img src={fullCus} alt="some images" />
               </div>
               <div className="cardHeading">Fully Customizable</div>
               <div className="cardBody">
