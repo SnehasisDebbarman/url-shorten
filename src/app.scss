@@ -351,7 +351,11 @@ main{
         display: grid;
         grid-template-columns: 30% 30% 30%;
         gap: 6.5%;
-       
+        background: url("./line.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 57%;
+        
 
         @include lt-sm {
             grid-template-columns: 100%;
@@ -359,21 +363,21 @@ main{
             justify-content: center;
             padding-bottom: 10rem;
           }
-        .line{
-            position: absolute;
-            top: 75%;
-            height: 1rem;
-            width: 80vw;
-            background-color: $cyanP;
-            z-index: 0;
-            @include lt-sm {
-                top: 60%;
-                height: 90vh;
-                left: calc(50% - 0.5rem);
-                width: 1rem;
+        // .line{
+        //     position: absolute;
+        //     top: 75%;
+        //     height: 1rem;
+        //     width: 80vw;
+        //     background-color: $cyanP;
+        //     z-index: 0;
+        //     @include lt-sm {
+        //         top: 60%;
+        //         height: 90vh;
+        //         left: calc(50% - 0.5rem);
+        //         width: 1rem;
                
-              }
-        }
+        //       }
+        // }
        
         .card{
             height: fit-content;
